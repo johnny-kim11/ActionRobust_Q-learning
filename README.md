@@ -1,6 +1,6 @@
-# AR-QL (Action-Robust Q-Learning) — Gymnasium MuJoCo 구현
+# AR-QL (Action-Robust Q-Learning) 구현
 
-이 저장소는 `SMC_2024_RRL_Comments.pdf`에 정리된 **AR-QL(Action-Robust Q-Learning)** 알고리즘을 Gymnasium MuJoCo 환경에서 학습/평가하기 위한 최소 구현입니다.
+이 저장소는 Action Robust Reinforcement Learning with Highly Expressive Policy (IEEE SMC, 2024)에 정리된 **AR-QL(Action-Robust Q-Learning)** 알고리즘을 Gymnasium MuJoCo 환경에서 학습/평가하기 위한 최소 구현입니다.
 
 - **핵심 아이디어**
   - Protagonist는 별도 정책 네트워크 없이 **Q(s, a)** 에서 직접 좋은 행동 `a^P`를 샘플링합니다.
@@ -22,5 +22,3 @@
   체크포인트 로드 후 평가(평균 return). (현재 인자/옵션 일부 수정 필요 — 아래 “Known Issues” 참고)
 - `utils.py`  
   seed/device/obs flatten/soft update 등 공용 유틸
-- Action Robust Reinforcement Learning with Highly Expressive Policy (IEEE SMC, 2024) 구현.
-  논문/주석(알고리즘 라인 매핑 참고용)
